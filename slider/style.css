@@ -3,6 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background: linear-gradient(45deg, #8b6160,#e3c79c);
+    filter: hue-rotate(100deg);
+    animation: hue 8s linear infinite;
+}
+@keyframes  hue{
+    0% {
+        filter : hue-rotate(0deg)
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
 .slider{
     width: 60.032%;
     margin: 0 auto;
@@ -30,7 +43,7 @@
     cursor: pointer;
 }
 .prev-btn:hover,.next-btn:hover{
-   color: #f0c5ed;
+   color: #ea0a0a;
 }
 
 
